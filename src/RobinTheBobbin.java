@@ -1,21 +1,22 @@
 public class RobinTheBobbin {
+    private static final String EATER_NAME = "Robin the Bobbin";
     public static void main(String[] args) {
-        final String eaterName = "Robin the Bobbin";
+
         String food = "meat";
-        eat(eaterName, food);
+        eat(food);
         food = "bread";
-        eat(eaterName, food);
+        eat(food);
         food = "eggs";
-        eat(eaterName, food);
+        eat(food);
         food = "chicken";
-        eat(eaterName, food);
+        eat(food);
         food = "pie";
-        eat(eaterName, food);
+        eat(food);
         food = "pizza";
-        eat(eaterName, food);
+        eat(food);
     }
 
-    private static void eat(String eater, String food) {
-        System.out.println(eater + " eat " + food + " and feels happy!");
+    private static void eat( String food) {
+        System.out.println(EATER_NAME + " eat " + food + " and feels happy!");
     }
 }
