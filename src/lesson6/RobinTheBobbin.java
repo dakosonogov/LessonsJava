@@ -1,3 +1,5 @@
+package lesson6;
+
 public class RobinTheBobbin {
     private static final String EATER_NAME = "Robin the Bobbin";
     public static void main(String[] args) {
