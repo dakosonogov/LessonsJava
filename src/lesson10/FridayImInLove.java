@@ -3,25 +3,34 @@ package lesson10;
 public class FridayImInLove {
     public static void main(String[] args) {
         barTrip(10, 20, 5);
+        barTrip(10, 20, 20);
+        barTrip(10, 20, 10);
+        barTrip(10, 20, 10000);
         fridayCheck(true, false);
+        fridayCheck(true, true);
+        fridayCheck(false, true);
+        fridayCheck(false, false);
     }
 
     private static void fridayCheck(boolean isTodayFriday, boolean aLotOfMoney) {
+        String message;
         if (isTodayFriday && aLotOfMoney) {
-            System.out.println("Выпить пивка в баре");
+            message = "Выпить пивка в баре";
         } else if (isTodayFriday) {
-            System.out.println("Попросить в долг у друга и выпить пива");
-        } else System.out.println("Идти домой и есть гречку");
-
+            message = "Попросить в долг у друга и выпить пива";
+        } else message = "Идти домой и есть гречку";
+        System.out.println(message);
     }
 
     private static void barTrip(int beerPrice, int whiskeyPrice, int amount) {
+        String message;
         if (amount >= (beerPrice + whiskeyPrice)) {
-            System.out.println("Бармен, пива и виски!");
+            message = "Бармен, пива и виски!";
         } else if (amount >= whiskeyPrice) {
-            System.out.println("Бармен, виски!");
+            message = "Бармен, виски!";
         } else if (amount >= beerPrice) {
-            System.out.println("Бармен, пива");
-        } else System.out.println("Покинуть бар");
+            message = "Бармен, пива";
+        } else message = "Покинуть бар";
+        System.out.println(message);
     }
 }
