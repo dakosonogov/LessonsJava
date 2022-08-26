@@ -10,15 +10,23 @@ public class IfElse {
         return a + b > c && b + c > a && a + c > b;
     }
 
-    public static int largestNumber(int a, int b, int c, int d) {
-        int num;
-        if (a >= b && a >= c && a >= d) {
-            num = a;
-        } else if (b >= c && b >= d) {
+    public static int minNumber(int a, int b, int c, int d) {
+        int num = a;
+        if (b <= num) {
             num = b;
-        } else if (c >= d) {
+        } if (c <= num) {
             num = c;
-        } else num = d;
+        } if (d <= num) {
+            num = d;
+        }
         return num;
+    }
+
+    public static void ringTheBell(boolean isDayOff, boolean isHoliday) {
+        if (!isHoliday) {
+            if (isDayOff) {
+                System.out.println("11-00 AM - Brrrr");
+            } else System.out.println("6-00 AM - Brrrr");
+        }
     }
 }

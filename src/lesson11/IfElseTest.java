@@ -31,20 +31,20 @@ class IfElseTest {
     }
 
     @Test
-    public void largestNumberTestFirst() {
-        int num = IfElse.largestNumber(1,2,3,4);
-        assertEquals(4, num);
+    public void minNumberTestFirst() {
+        int num = IfElse.minNumber(1,2,3,4);
+        assertEquals(1, num);
     }
 
     @Test
-    public void largestNumberTestSecond() {
-        int num = IfElse.largestNumber(1,6,3,4);
-        assertEquals(6, num);
+    public void minNumberTestSecond() {
+        int num = IfElse.minNumber(1,6,3,4);
+        assertEquals(1, num);
     }
 
     @Test
-    public void largestNumberTestThird() {
-        int num = IfElse.largestNumber(7,6,3,4);
-        assertEquals(7, num);
+    public void minNumberTestThird() {
+        int num = IfElse.minNumber(7,6,3,4);
+        assertEquals(3, num);
     }
 }
