@@ -1,6 +1,6 @@
 package lesson11.task12;
 
-public class UrlChecker {
+public class CheckUrl {
     public static void main(String[] args) {
         System.out.println(urlChecker("http://"));
     }

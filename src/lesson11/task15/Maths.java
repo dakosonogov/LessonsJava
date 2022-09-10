@@ -8,7 +8,7 @@ public class Maths {
     }
 
     public static int findModule (int a) {
-        return a > 0 ? a : a * -1;
+        return a >= 0 ? a : a * -1;
     }
 
     public static void print (Object o) {

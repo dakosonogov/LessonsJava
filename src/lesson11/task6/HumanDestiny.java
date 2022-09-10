@@ -11,19 +11,23 @@ public class HumanDestiny {
         humanDestiny(900);
     }
 
-    public static void humanDestiny (int a) {
-        if ( a > 0 && a < 123) {
-            if (a < 7) {
-                System.out.println("Идти в детсад");
-            } else if (a < 18) {
-                System.out.println("Идти в школу");
-            } else if (a < 20) {
-                System.out.println("Идти в колледж");
-            } else if (a < 25) {
-                System.out.println("Идти в университет");
-            } else if (a < 65) {
-                System.out.println("Идти работать");
-            } else System.out.println("Идти в поликлинику");
-        } else System.out.println("Уйди, нелюдь");
+    public static void humanDestiny (int age) {
+        if ( age > 0 && age < 123) {
+            if (age < 7) {
+                print("Идти в детсад");
+            } else if (age < 18) {
+                print("Идти в школу");
+            } else if (age < 20) {
+                print("Идти в колледж");
+            } else if (age < 25) {
+                print("Идти в университет");
+            } else if (age < 65) {
+                print("Идти работать");
+            } else print("Идти в поликлинику");
+        } else print("Уйди, нелюдь");
+    }
+
+    public static void print (Object o) {
+        System.out.println(o);
     }
 }

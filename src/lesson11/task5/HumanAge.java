@@ -9,10 +9,14 @@ public class HumanAge {
         checkAge(100);
     }
 
-    public static void checkAge (int a) {
+    public static void checkAge (int age) {
         //Проверка верхней границы возраста по википедии: 122 года
-        if (a > 0 && a < 123) {
-            System.out.println("Ваш возраст " + a);
-        } else System.out.println("Вы бот");
+        if (age > 0 && age < 123) {
+            print("Ваш возраст " + age);
+        } else print("Вы бот");
+    }
+
+    public static void print (Object o) {
+        System.out.println(o);
     }
 }

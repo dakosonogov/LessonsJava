@@ -1,6 +1,6 @@
 package lesson11.task11;
 
-public class StringChecker {
+public class CheckString {
     public static void main(String[] args) {
         System.out.println(stringCheck("ааа", "ddd"));
         System.out.println(stringCheck("",""));
@@ -13,9 +13,7 @@ public class StringChecker {
         if (a.isEmpty() || b.isEmpty()) {
             return false;
         } else {
-            if (a.equals(b)) {
-                return true;
-            } else  return false;
+            return a.equals(b);
         }
     }
 }
